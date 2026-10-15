@@ -1,4 +1,4 @@
-# 🧼 UME - Homemade Soaps & Lipbalms E-Commerce Store
+# UME - Handcrafted Products E-Commerce Store
 
 A beautiful, modern React e-commerce web application for selling homemade soaps and lipbalms.
 
