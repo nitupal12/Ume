@@ -1,7 +1,144 @@
 .app {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #fbf8f4;
+}
+
+.hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #8a6f5a;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(40, 30, 20, 0.55) 0%, rgba(40, 30, 20, 0.1) 70%);
+}
+
+.hero-text {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  max-width: 620px;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.hero-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  opacity: 0.8;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.hero-dot.active {
+  background: #ffffff;
+}
+
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3b3b3b;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.site-footer {
+  background: #3b3b3b;
+  color: #f5f1ec;
+  text-align: center;
+  padding: 36px 20px;
+}
+
+.footer-brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.site-footer p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
 }
 
 * {
